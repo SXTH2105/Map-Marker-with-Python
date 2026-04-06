@@ -48,7 +48,7 @@ while True:
             continue
 
     m = folium.Map(location=[lat, lon], zoom_start=13)
-
+    # add marker with popup and tooltip
     popup_text = f"<b>{location_name}</b><br>Lat: {lat:.6f}<br>Lon: {lon:.6f}"
     folium.Marker([lat, lon], popup=popup_text, tooltip=location_name, icon=folium.Icon(color="red", icon="info-sign")).add_to(m)
 
