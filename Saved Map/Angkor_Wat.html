@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_217957ebae0822256cbf70f5d56d45f1 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_217957ebae0822256cbf70f5d56d45f1" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_217957ebae0822256cbf70f5d56d45f1 = L.map(
+                "map_217957ebae0822256cbf70f5d56d45f1",
+                {
+                    center: [13.4124381, 103.8665878],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d5cf8ef96a9710c8ef4b4c197733794f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d5cf8ef96a9710c8ef4b4c197733794f.addTo(map_217957ebae0822256cbf70f5d56d45f1);
+        
+    
+            var marker_18cf5fb586d66489677ae12c4d3e068e = L.marker(
+                [13.4124381, 103.8665878],
+                {
+}
+            ).addTo(map_217957ebae0822256cbf70f5d56d45f1);
+        
+    
+            var icon_91f4618e53a75cf891eb4c2a5f5df48a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47a8f8d386488577d23c037d2fb0df9e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_037424370fba273cf6dca821aff24d16 = $(`<div id="html_037424370fba273cf6dca821aff24d16" style="width: 100.0%; height: 100.0%;">Angkor Wat</div>`)[0];
+                popup_47a8f8d386488577d23c037d2fb0df9e.setContent(html_037424370fba273cf6dca821aff24d16);
+            
+        
+
+        marker_18cf5fb586d66489677ae12c4d3e068e.bindPopup(popup_47a8f8d386488577d23c037d2fb0df9e)
+        ;
+
+        
+    
+    
+            marker_18cf5fb586d66489677ae12c4d3e068e.bindTooltip(
+                `<div>
+                     Angkor Wat
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_18cf5fb586d66489677ae12c4d3e068e.setIcon(icon_91f4618e53a75cf891eb4c2a5f5df48a);
+            
+</script>
+</html>
